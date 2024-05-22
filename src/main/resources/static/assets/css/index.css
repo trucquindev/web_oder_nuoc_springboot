@@ -1,0 +1,447 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  position:relative;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.containHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 14px;
+}
+
+.containHeader ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.containHeader ul .user,
+.containHeader ul .settings {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.containLogoHeader {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.imgLogoHeader {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+.containNavbar div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containNavbar ul {
+  display: flex;
+  gap: 30px;
+}
+
+.containNavbar li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.containNavbar li:hover {
+  background-color: hsl(210, 100%, 30%);
+}
+
+.containNavbar li:active {
+  background-color: hsl(210, 100%, 20%);
+}
+
+.body {
+  display: flex;
+  gap: 1rem;
+}
+
+.body .sideLeft {
+  width: 60%;
+}
+
+.body h1 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.body .containSideLeft > div {
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.625rem;
+}
+
+.body .containSideLeft .reportInDay {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.body .containSideLeft .reportInDay > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.body .containSideLeft .reportInDay .icon {
+  padding: 0.5rem;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.body .containSideLeft .reportInDay .iconDollar {
+  background-color: hsl(199, 100%, 43%);
+}
+
+.data1 {
+  color: hsl(199, 100%, 43%);
+  font-size: 1.5rem;
+}
+
+.body .containSideLeft .reportInDay .iconPen {
+  background-color: hsl(121, 39%, 49%);
+}
+
+.data2 {
+  color: hsl(121, 39%, 49%);
+  font-size: 1.5rem;
+}
+
+.body .containSideLeft .reportInDay .iconUser {
+  background-color: hsl(181, 78%, 43%);
+}
+
+.data3 {
+  color: hsl(181, 78%, 43%);
+  font-size: 1.5rem;
+}
+
+.body .containSideLeft .sales {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.body .containSideLeft .arrowRight {
+  width: 0.9rem;
+  height: 0.9rem;
+  color: #fff;
+  background-color: hsl(0, 0%, 71%);
+  border-radius: 100%;
+}
+
+.containSales {
+  height: 18.75rem;
+}
+
+.body .containSideLeft .sales p {
+  text-transform: uppercase;
+  color: hsl(199, 100%, 43%);
+}
+
+.body .sideRight {
+  width: 40%;
+  margin-top: 1rem;
+  border-radius: 0.625rem;
+  background-color: #fff;
+}
+
+.containSideRight .heading {
+  padding: 1rem 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+@media (min-width: 100rem) {
+  div.body,
+  div.containHeader,
+  div.containNavbar {
+    max-width: 98.125rem;
+    margin: 0 auto;
+  }
+}
+
+/* Thu ngan */
+.thungan {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #004080;
+}
+
+.tn-left {
+  width: 50%;
+}
+.thungan .containTab {
+  background-color: #fff;
+  height: 35rem;
+  border-radius: 0.625rem;
+}
+
+.thungan .containTabItem {
+  display: flex;
+  margin-left: 1rem;
+  gap: 1.5rem;
+  color: #fff;
+}
+
+.thungan .itemTab1,
+.thungan .itemTab2,
+.thungan .itemTab3,
+.thungan .itemTabRight {
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #0066cc;
+  border-radius: 0.9rem 0.9rem 0 0;
+  font-size: 0.8rem;
+}
+
+.thungan .itemTab1:hover,
+.thungan .itemTab2:hover,
+.thungan .itemTab3:hover {
+  background-color: #004d99;
+}
+
+.containTabItem .activeTab {
+  background-color: #fff;
+}
+
+.containTabItem .activeTab {
+  background-color: #fff;
+  color: #004080;
+}
+
+.containTabItem .activeTab:hover {
+  background-color: #fff;
+}
+
+.containTab .tab {
+  font-size: 0.9rem;
+  height: 100%;
+}
+
+.containTab .tabRoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containTable .containItemTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.625rem;
+  margin-top: 1rem;
+}
+
+.containTable .iconTable {
+  width: 8rem;
+}
+
+.tn-right {
+  width: 50%;
+}
+
+.thungan .itemTabRight {
+  margin-bottom: 0.2rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+  border-radius: 100%;
+}
+
+.tn-right .containTab {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.containTab .footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-top: 1px solid #f0f0f0;
+  background-color: #eeeeee;
+}
+
+.containTab .total {
+  place-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.containTab .conatainButton {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.containTab .button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button.thanhToan {
+  background-color: #28b44f;
+  color: #fff;
+}
+
+.button.thanhToan:hover {
+  background-color: #229b44;
+  color: #fff;
+}
+
+.button.thongBao {
+  background-color: #9bb6d2;
+  color: #fff;
+}
+
+.tn-right .index {
+  align-self: center;
+}
+
+.nv-body {
+  background-color: #fff;
+}
+
+.nv-body .headerBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.headerTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.rowTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.itemTable {
+  width: 20%;
+}
+.title-ban{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004080;
+  padding:6px;
+  margin-left: 40%;
+}
+.boy-contain{
+    margin-top: 4px;
+   position: relative;
+}
+.heading-tongquan{
+  padding:8px;
+  font-size: 1.5rem;
+  background-color: #ccc;
+  border-radius:10px;
+  display:block;
+  text-align: center;
+}
+.flex{
+  position: absolute;
+  left: 4px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.billItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.model{
+  position:absolute;
+  top: 20%;
+  width:300px;
+  height:150px;
+  border: 1px solid #ccc;
+  background-color: rgb(178,255,255);
+  border-radius: 10px;
+  display:none;
+  animation: modelFadeIn ease 1s;
+}
+.activeModel{
+  display:block;
+}
+.model__body{
+  padding:10px
+}
+.model__footer{
+  display:flex;
+  justify-content: flex-end;
+  margin-right:10px;
+}
+@keyframes modelFadeIn {
+  from{
+      transform: translateY(-150px);
+      opacity: 0;
+  }
+  to{
+      transform: 0;
+      opacity: 1;
+  }
+}

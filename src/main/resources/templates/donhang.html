@@ -1,0 +1,38 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{assets/css/reset.css}">
+    <link rel="stylesheet" th:href="@{assets/css/index.css}">
+    <link rel="stylesheet" th:href="@{assets/css/donhang.css}">
+    <script src="js/app.js"></script>
+</head>
+<body class="donhang">
+    <div class="wrapper">
+        <div class="button-back">
+            <a class="button-back__item" th:href="@{/}"> <img class="back" style="width: 50px;height: 50px" th:src="@{assets/images/back.png}"></a>
+
+        </div>
+        <div class="header">
+            <h1 class="title">Đơn hàng</h1>
+        </div>
+        <div class="line"></div>
+        <div class="containerDonHang">
+            <div class="donHangItem">
+                <div class="box" th:each="hoadon:${hoadons}">
+                    <div class="title-box"><p></p> <p class="title-box__item">Đơn hàng </p></div>
+                    <div class="oder">
+                        <ul class="oder-item" d>
+                            <li style="display: flex;flex-direction: row">Mã bàn:<p th:text="${hoadon.maban_id}" style="padding-left: 10px"></p></li>
+                            <li style="display: flex;flex-direction: row">Mã bàn:<p th:text="${hoadon.tongtien}" style="padding-left: 10px"></p></li>
+                            <li style="display: flex;flex-direction: row">Mã bàn:<p th:text="${hoadon.ngayban}" style="padding-left: 10px"></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

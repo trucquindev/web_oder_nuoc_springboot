@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thu ngân</title>
+  <link rel="stylesheet" th:href="@{assets/css/index.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/assets/css/reset.css}">
+  <link rel="stylesheet" th:href="@{/assets/css/index.css}">
+  
+  <script th:src="@{asstes/app.js}"></script>
+</head>
+
+<body class="thungan">
+  <div class="tn-left">
+    <div class="containTabItem">
+      <div class="itemTab1 activeTab" style="margin-bottom: -14px;">Đặt món</div>
+    </div>
+    <div class="containTab" style="height: auto;">
+      <h1 class="title-ban">Chọn bàn</h1>
+      <div class="tab tabRoom">
+        <div class="containTable">
+          <div class="containItemTable banchoose" th:each="ban:${bans}">
+            <img class="iconTable" th:src="@{assets/images/OIP.jpg}" alt="">
+            <p class="id_ban" th:text="${ban.maban_id}" style="display: block"></p><p class="ten_ban" th:text="${ban.tenban}"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containTab" style="height: auto;">
+      <h1 class="title-ban">Chọn món</h1>
+      <div class="tab tabRoom">
+        <div class="containTable">
+          <div class="containItemTable drinkchoose" th:each="menu:${menus}">
+            <img class="iconTable" th:src="@{assets/images/drink.jpeg}" alt="" style="margin-bottom: 8px;">
+            <h6 style="margin-bottom: 4px;" class="water" th:text="${menu.tendouong}"></h6><p class="money " th:text="${menu.dongia.gia}"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tn-right">
+    <div class="containTabItem" style="position: relative;">
+      <div><i class="itemTabRight">+</i></div>
+      <p class="index"><a href="../index.html">Tổng quan</a></p>
+      <div class="containTabItem" style="position: absolute;right: 6px; padding: 6px;background-color: antiquewhite; border: 2px solid #5f8595; border-radius: 4px;">
+        <a th:href="@{/donhang}"  style=" color: black;">Đơn hàng</a>
+      </div>
+    </div>
+    
+    <div class="containTab boy-contain" style="height: 72%">
+      <div class="body flex" style=" position: absolute; left: 4px; top: 0;">
+        <h1 class="heading-tongquan">Bàn được chọn</h1>
+        <div class="flex-row">
+          <p>Bàn bạn đã chọn là:</p>
+          <p style="margin-left: 10px;" class="p-ban-choose"></p>
+        </div>
+        <h1 class="heading-tongquan">Món được chọn là</h1>
+        <div id="bill" style="margin-top: 0px;">
+          <ul style="font-size: 14px;" id="billItems"></ul>
+        </div>
+        
+      </div>
+      <div class="footer">
+        <div class="total-heading">
+          <p class="total"></p>
+        </div>
+
+        <div class="conatainButton">
+          <div class="button thanhToan">
+            <p id="paymentButton">Thanh toán</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="model">
+    <div class="model__content">
+      <div class="model__close">
+        <i class="bx bx-x"></i>
+      </div>
+      <div class="model__body">
+        <div class="model__title">
+          <h1>Thông báo</h1>
+        </div>
+        <div class="model__content">
+          <p>Đã thanh toán thành công</p>
+        </div>
+      </div>
+      <div class="model__footer">
+        <button class="model__button">Đóng</button>
+      </div>
+    </div>
+  </div>
+  <script th:src="@{assets/app.js}"></script>
+</body>
+
+</html>
